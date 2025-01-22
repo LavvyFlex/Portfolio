@@ -193,9 +193,10 @@
     </footer>
 
     <script>
-        // Reset scroll position when page reloads
+        // Reset scroll position when page reloads and remove the hash from the URL
         window.onload = function() {
-            window.scrollTo(0, 0);
+            // Remove the hash from the URL without reloading the page
+            history.pushState("", document.title, window.location.pathname + window.location.search);
         };
 
         // Add click event to the Explore button
