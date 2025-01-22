@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zaid Hassan's Portfolio - Aspiring Web Developer from Pakistan">
+    <title>Zaid Hassan | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(180deg, rgb(173, 216, 230), rgb(245, 245, 245));
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            margin-top: 50px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgb(245, 245, 245);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section p, .section ul {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '\u2713';
+            color: rgb(152, 251, 152);
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            background: rgb(0, 51, 102);
+            transition: all 0.3s;
+            position: relative;
+            animation: blink 1.5s infinite;
+        }
+
+        .btn:hover {
+            background: rgb(255, 228, 196);
+            color: #000;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            background: linear-gradient(135deg, rgb(0, 51, 102), rgb(255, 0, 0));
+            z-index: -1;
+            filter: blur(8px);
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgb(54, 69, 79);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: rgb(245, 245, 245);
+        }
+
+        .explore-btn {
+            display: block;
+            margin: 20px auto 50px auto;
+            text-align: center;
+            width: fit-content;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                background: rgb(0, 51, 102);
+            }
+            50% {
+                background: rgb(0, 255, 127);
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .btn:active {
+            background: linear-gradient(135deg, rgb(255, 0, 0), rgb(0, 255, 255));
+            animation: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Page</h1>
+
+    <div class="explore-btn">
+        <a href="#contact" class="btn">Explore</a>
+    </div>
+
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! My name is <strong>Zaid Hassan</strong>, and I'm a passionate web developer based in Pakistan.
+                I began my journey in technology at the age of 8, exploring the potential of computers and technology.
+                Over the years, I’ve developed a strong interest in web development, focusing on HTML, CSS, and JavaScript
+                to build functional and visually appealing websites.
+            </p>
+            <p>
+                I’m committed to learning and improving every day. My ultimate goal is to master advanced frameworks
+                and techniques to create innovative digital experiences.
+            </p>
+        </div>
+
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Frontend Development: Proficient in HTML5, CSS3, and JavaScript.</li>
+                <li>Responsive Design: Creating websites that look great on all devices.</li>
+                <li>Debugging & Problem Solving: Troubleshooting code to fix bugs and improve performance.</li>
+                <li>Creative Thinking: Bringing fresh, user-friendly ideas to web designs.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="goals">
+            <h2>Goals</h2>
+            <p>
+                My goals include mastering advanced web development technologies like React.js, Node.js, and backend development.
+                I aim to build real-world projects to expand my portfolio and collaborate with developers and clients
+                to create impactful web solutions. Staying updated with the latest trends in web development is my priority.
+            </p>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <p><strong>📍 Location:</strong> Pakistan</p>
+            <p><strong>📧 Email:</strong> <a href="mailto:ZaidHassan9123@gmail.com" style="color: rgb(0, 51, 102);">ZaidHassan9123@gmail.com</a></p>
+            <p><strong>💻 GitHub:</strong> <a href="https://github.com/LavvyFlex" target="_blank" style="color: rgb(0, 51, 102);">github.com/LavvyFlex</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Zaid Hassan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
